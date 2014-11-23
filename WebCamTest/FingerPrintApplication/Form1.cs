@@ -1,5 +1,4 @@
-﻿using RaspberryCam;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,7 +22,8 @@ namespace FingerPrintApplication
         const int VIDEOHEIGHT = 480; // Depends on video device caps
         const int VIDEOBITSPERPIXEL = 24; // BitsPerPixel values determined by device
         IntPtr m_ip = IntPtr.Zero;
-        
+        Bitmap currentImage;
+
         WebCamHelper camHelper = null;
 
         public Form1()
@@ -58,209 +58,294 @@ namespace FingerPrintApplication
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            StringBuilder sb = new StringBuilder();
-            sb.Append("Name");
-            sb.Append(" ");
-            sb.Append(txtName.Text);
-            sb.Append(Environment.NewLine);
+            StringBuilder sbError = new StringBuilder();
 
-            sb.Append("DOB");
-            sb.Append(" ");
-            sb.Append(dtpDOB.Value.ToShortDateString());
-            sb.Append(Environment.NewLine);
+            sbError.Append("Please Enter the Following Details:");
+            sbError.Append(Environment.NewLine);
 
-            sb.Append("Gender");
-            sb.Append(" ");
-            sb.Append(cmbGender.SelectedValue.ToString());
-            sb.Append(Environment.NewLine);
+            if (txtName.Text == string.Empty)
+            {
+                sbError.Append("Enter the Name.");
+                sbError.Append(Environment.NewLine);
+            }
+            if (dtpDOB.Value == null)
+            {
+                sbError.Append("Select the DOB.");
+                sbError.Append(Environment.NewLine);
+            }
+            if (txtFatherName.Text == string.Empty)
+            {
+                sbError.Append("Enter the Father's/Husbund Name.");
+                sbError.Append(Environment.NewLine);
+            }
+            if (txtMobile.Text == string.Empty)
+            {
+                sbError.Append("Enter the Mobile No.");
+                sbError.Append(Environment.NewLine);
+            }
+            if (txtAtdL.Text == string.Empty)
+            {
+                sbError.Append("Enter the ATDL.");
+                sbError.Append(Environment.NewLine);
+            }
+            if (txtAtdR.Text == string.Empty)
+            {
+                sbError.Append("Enter the ATDR.");
+            }
 
-            sb.Append("Company/School Name");
-            sb.Append(" ");
-            sb.Append(txtCompanySchoolName.Text);
-            sb.Append(Environment.NewLine);
+            //if (sbError.Length <= 37)
+            if (sbError.Length <= 2000)
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.Append("Name:");
+                sb.Append(" ");
+                sb.Append(txtName.Text);
+                sb.Append(Environment.NewLine);
 
-            sb.Append("Designation/Class");
-            sb.Append(" ");
-            sb.Append(txtDesignation.Text);
-            sb.Append(Environment.NewLine);
+                sb.Append("DOB:");
+                sb.Append(" ");
+                sb.Append(dtpDOB.Value.ToShortDateString());
+                sb.Append(Environment.NewLine);
 
-            sb.Append("Telephone");
-            sb.Append(" ");
-            sb.Append(txtTelephone.Text);
-            sb.Append(Environment.NewLine);
+                sb.Append("Gender:");
+                sb.Append(" ");
+                sb.Append(cmbGender.SelectedValue.ToString());
+                sb.Append(Environment.NewLine);
 
-            sb.Append("Mobile");
-            sb.Append(" ");
-            sb.Append(txtMobile.Text);
-            sb.Append(Environment.NewLine);
+                sb.Append("Company/School Name:");
+                sb.Append(" ");
+                sb.Append(txtCompanySchoolName.Text);
+                sb.Append(Environment.NewLine);
 
-            sb.Append("Email");
-            sb.Append(" ");
-            sb.Append(txtEmail.Text);
-            sb.Append(Environment.NewLine);
+                sb.Append("Designation/Class:");
+                sb.Append(" ");
+                sb.Append(txtDesignation.Text);
+                sb.Append(Environment.NewLine);
 
-            sb.Append("Address");
-            sb.Append(Environment.NewLine);
-            sb.Append(Environment.NewLine);
+                sb.Append("Telephone:");
+                sb.Append(" ");
+                sb.Append(txtTelephone.Text);
+                sb.Append(Environment.NewLine);
 
-            sb.Append("House No");
-            sb.Append(" ");
-            sb.Append(txtHouseNo.Text);
-            sb.Append(Environment.NewLine);
+                sb.Append("Mobile:");
+                sb.Append(" ");
+                sb.Append(txtMobile.Text);
+                sb.Append(Environment.NewLine);
 
-            sb.Append("Building Name");
-            sb.Append(" ");
-            sb.Append(txtBuildingName.Text);
-            sb.Append(Environment.NewLine);
+                sb.Append("Email:");
+                sb.Append(" ");
+                sb.Append(txtEmail.Text);
+                sb.Append(Environment.NewLine);
 
-            sb.Append("Street Name");
-            sb.Append(" ");
-            sb.Append(txtStreetName.Text);
-            sb.Append(Environment.NewLine);
+                sb.Append("Address:");
+                sb.Append(Environment.NewLine);
+                sb.Append(Environment.NewLine);
 
-            sb.Append("State");
-            sb.Append(" ");
-            sb.Append(txtState.Text);
-            sb.Append(Environment.NewLine);
+                sb.Append("House No:");
+                sb.Append(" ");
+                sb.Append(txtHouseNo.Text);
+                sb.Append(Environment.NewLine);
 
-            sb.Append("City");
-            sb.Append(" ");
-            sb.Append(txtCity.Text);
-            sb.Append(Environment.NewLine);
+                sb.Append("Building Name:");
+                sb.Append(" ");
+                sb.Append(txtBuildingName.Text);
+                sb.Append(Environment.NewLine);
 
-            sb.Append("Postal Code");
-            sb.Append(" ");
-            sb.Append(txtPostalCode.Text);
-            sb.Append(Environment.NewLine);
+                sb.Append("Street Name:");
+                sb.Append(" ");
+                sb.Append(txtStreetName.Text);
+                sb.Append(Environment.NewLine);
 
+                sb.Append("State:");
+                sb.Append(" ");
+                sb.Append(txtState.Text);
+                sb.Append(Environment.NewLine);
 
-            sb.Append("ATD-L");
-            sb.Append("   ");
-            sb.Append("ATD-L");
-            sb.Append(" ");
-            sb.Append(txtAtdL.Text);
-            sb.Append("   ");
-            sb.Append("ATD-R");
-            sb.Append(" ");
-            sb.Append(txtAtdL.Text);
+                sb.Append("City:");
+                sb.Append(" ");
+                sb.Append(txtCity.Text);
+                sb.Append(Environment.NewLine);
 
-            sb.Append("Consulntant/Franchise Code");
-            sb.Append(" ");
-            sb.Append(txtFranchiseCode.Text);
-            sb.Append(Environment.NewLine);
-
-            sb.Append("Sibling1");
-            sb.Append(Environment.NewLine);
-            sb.Append("Name");
-            sb.Append(" ");
-            sb.Append(txtNameSibling1.Text);
-            sb.Append(Environment.NewLine);
-
-            sb.Append("DOB");
-            sb.Append(" ");
-            sb.Append(dtpDOBSibling1.Value.ToShortDateString());
-            sb.Append(Environment.NewLine);
-
-            sb.Append("Gender");
-            sb.Append(" ");
-            sb.Append(cmbGenderSibling1.SelectedValue.ToString());
-            sb.Append(Environment.NewLine);
-
-
-            sb.Append("School");
-            sb.Append(" ");
-            sb.Append(txtSchoolSibling1.Text);
-            sb.Append(Environment.NewLine);
-
-
-            sb.Append("Class");
-            sb.Append(" ");
-            sb.Append(txtClassSibling1.Text);
-            sb.Append(Environment.NewLine);
-
-            sb.Append("Sibling2");
-            sb.Append(Environment.NewLine);
-            sb.Append("Name");
-            sb.Append(" ");
-            sb.Append(txtNameSibling2.Text);
-            sb.Append(Environment.NewLine);
-
-            sb.Append("DOB");
-            sb.Append(" ");
-            sb.Append(dtpDOBSibling2.Value.ToShortDateString());
-            sb.Append(Environment.NewLine);
-
-            sb.Append("Gender");
-            sb.Append(" ");
-            sb.Append(cmbGenderSibling2.SelectedValue.ToString());
-            sb.Append(Environment.NewLine);
+                sb.Append("Postal Code:");
+                sb.Append(" ");
+                sb.Append(txtPostalCode.Text);
+                sb.Append(Environment.NewLine);
 
 
-            sb.Append("School");
-            sb.Append(" ");
-            sb.Append(txtSchoolSibling2.Text);
-            sb.Append(Environment.NewLine);
+                sb.Append("ATD-L:");
+                sb.Append(" ");
+                sb.Append(txtAtdL.Text);
+                sb.Append("   ");
+                sb.Append("ATD-R:");
+                sb.Append(" ");
+                sb.Append(txtAtdL.Text);
+                sb.Append(Environment.NewLine);
+
+                sb.Append("Consulntant/Franchise Code:");
+                sb.Append(" ");
+                sb.Append(txtFranchiseCode.Text);
+                sb.Append(Environment.NewLine);
+
+                sb.Append("Sibling1:");
+                sb.Append(Environment.NewLine);
+                sb.Append("Name:");
+                sb.Append(" ");
+                sb.Append(txtNameSibling1.Text);
+                sb.Append(Environment.NewLine);
+
+                sb.Append("DOB:");
+                sb.Append(" ");
+                sb.Append(dtpDOBSibling1.Value.ToShortDateString());
+                sb.Append(Environment.NewLine);
+
+                sb.Append("Gender:");
+                sb.Append(" ");
+                sb.Append(cmbGenderSibling1.SelectedValue.ToString());
+                sb.Append(Environment.NewLine);
 
 
-            sb.Append("Class");
-            sb.Append(" ");
-            sb.Append(txtClassSibling2.Text);
-            sb.Append(Environment.NewLine);
+                sb.Append("School:");
+                sb.Append(" ");
+                sb.Append(txtSchoolSibling1.Text);
+                sb.Append(Environment.NewLine);
 
 
-            sb.Append("Father/Husband Name");
-            sb.Append(" ");
-            sb.Append(txtFatherName.Text);
-            sb.Append(Environment.NewLine);
+                sb.Append("Class:");
+                sb.Append(" ");
+                sb.Append(txtClassSibling1.Text);
+                sb.Append(Environment.NewLine);
+
+                sb.Append("Sibling2:");
+                sb.Append(Environment.NewLine);
+                sb.Append("Name:");
+                sb.Append(" ");
+                sb.Append(txtNameSibling2.Text);
+                sb.Append(Environment.NewLine);
+
+                sb.Append("DOB:");
+                sb.Append(" ");
+                sb.Append(dtpDOBSibling2.Value.ToShortDateString());
+                sb.Append(Environment.NewLine);
+
+                sb.Append("Gender:");
+                sb.Append(" ");
+                sb.Append(cmbGenderSibling2.SelectedValue.ToString());
+                sb.Append(Environment.NewLine);
 
 
-            sb.Append("Father/Husband DOB");
-            sb.Append(" ");
-            sb.Append(dtpFatherDOB.Value.ToShortDateString());
-            sb.Append(Environment.NewLine);
+                sb.Append("School:");
+                sb.Append(" ");
+                sb.Append(txtSchoolSibling2.Text);
+                sb.Append(Environment.NewLine);
 
-            sb.Append("Father/Husband Occupation");
-            sb.Append(" ");
-            sb.Append(txtOccupation.Text);
-            sb.Append(Environment.NewLine);
 
-            sb.Append("Father/Husband Mobile");
-            sb.Append(" ");
-            sb.Append(txtMobileNo.Text);
-            sb.Append(Environment.NewLine);
+                sb.Append("Class:");
+                sb.Append(" ");
+                sb.Append(txtClassSibling2.Text);
+                sb.Append(Environment.NewLine);
 
-            sb.Append("Father/Husband Email");
-            sb.Append(" ");
-            sb.Append(txtEmailId.Text);
-            sb.Append(Environment.NewLine);
 
-            sb.Append("Mother Name");
-            sb.Append(" ");
-            sb.Append(txtMotherName.Text);
-            sb.Append(Environment.NewLine);
+                sb.Append("Father/Husband Name:");
+                sb.Append(" ");
+                sb.Append(txtFatherName.Text);
+                sb.Append(Environment.NewLine);
 
-            sb.Append("Mother Occupation");
-            sb.Append(" ");
-            sb.Append(txtMotherOccupation.Text);
-            sb.Append(Environment.NewLine);
 
-            sb.Append("Mother Contact No");
-            sb.Append(" ");
-            sb.Append(txtMotherContactNo.Text);
-            sb.Append(Environment.NewLine);
+                sb.Append("Father/Husband DOB:");
+                sb.Append(" ");
+                sb.Append(dtpFatherDOB.Value.ToShortDateString());
+                sb.Append(Environment.NewLine);
 
-            sb.Append("Mother Email");
-            sb.Append(" ");
-            sb.Append(txtMotherEmailId.Text);
-            sb.Append(Environment.NewLine);
+                sb.Append("Father/Husband Occupation:");
+                sb.Append(" ");
+                sb.Append(txtOccupation.Text);
+                sb.Append(Environment.NewLine);
 
-            var sampleFile = File.CreateText("E:/Asp .net vNext/test.txt");
-            sampleFile.Write(sb);
-            sampleFile.Close();
+                sb.Append("Father/Husband Mobile:");
+                sb.Append(" ");
+                sb.Append(txtMobileNo.Text);
+                sb.Append(Environment.NewLine);
 
-            ResetValue();
+                sb.Append("Father/Husband Email:");
+                sb.Append(" ");
+                sb.Append(txtEmailId.Text);
+                sb.Append(Environment.NewLine);
 
-            MessageBox.Show("Data Saved Sucessfully.");
+                sb.Append("Mother Name:");
+                sb.Append(" ");
+                sb.Append(txtMotherName.Text);
+                sb.Append(Environment.NewLine);
+
+                sb.Append("Mother Occupation:");
+                sb.Append(" ");
+                sb.Append(txtMotherOccupation.Text);
+                sb.Append(Environment.NewLine);
+
+                sb.Append("Mother Contact No:");
+                sb.Append(" ");
+                sb.Append(txtMotherContactNo.Text);
+                sb.Append(Environment.NewLine);
+
+                sb.Append("Mother Email:");
+                sb.Append(" ");
+                sb.Append(txtMotherEmailId.Text);
+                sb.Append(Environment.NewLine);
+
+                string datePath = DateTime.Now.Year.ToString() + DateTime.Now.Month.ToString() + DateTime.Now.Day.ToString() + DateTime.Now.Hour.ToString() + DateTime.Now.Minute.ToString() + DateTime.Now.Second.ToString();
+                try
+                {
+                    //Finger print File Move
+                    if (System.IO.Directory.Exists("C:/FingerScan/Temp"))
+                    {
+                        string[] fingerScanPaths = Directory.GetFiles("C:/FingerScan/Temp");
+                        System.IO.Directory.CreateDirectory("C:/FingerScan/" + txtName.Text + "_" + datePath);
+
+                        if (fingerScanPaths.Length == 30)
+                        {
+
+                            foreach (var item in fingerScanPaths)
+                            {
+                                string pathFingerPrint = item.Replace("C:/FingerScan/Temp\\", "");
+                                System.IO.Directory.CreateDirectory("C:/FingerScan/" + txtName.Text + "_" + datePath + "/FingerPrints");
+                                File.Copy(item, "C:/FingerScan/" + txtName.Text + "_" + datePath + "/FingerPrints/" + pathFingerPrint);
+                            }
+
+                            if (currentImage != null)
+                            {
+                                SaveImage(currentImage, "C:/FingerScan/" + txtName.Text + "_" + datePath + "/" + txtName.Text + "_Image.jpg");
+
+                                var sampleFile = File.CreateText("C:/FingerScan/" + txtName.Text + "_" + datePath + "/" + txtName.Text + "_Details.txt");
+
+                                sampleFile.Write(sb);
+                                sampleFile.Close();
+
+                                ResetValue();
+
+                                MessageBox.Show("Data Saved Sucessfully");
+
+                            }
+                            else
+                            {
+                                MessageBox.Show("Please capture the Image using webcam.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+
+                        }
+                        else
+                        {
+                            MessageBox.Show("Ensure you have captured all 30 finger prints.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+            }
+            else
+            {
+                MessageBox.Show(sbError.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
 
@@ -337,24 +422,23 @@ namespace FingerPrintApplication
                 Marshal.FreeCoTaskMem(m_ip);
                 m_ip = IntPtr.Zero;
             }
-            
+
             m_ip = camHelper.Click();
-            Bitmap b = new Bitmap(camHelper.Width, camHelper.Height, camHelper.Stride, PixelFormat.Format24bppRgb, m_ip);
+            currentImage = new Bitmap(camHelper.Width, camHelper.Height, camHelper.Stride, PixelFormat.Format24bppRgb, m_ip);
 
             // If the image is upsidedown
-            b.RotateFlip(RotateFlipType.RotateNoneFlipY);
-            pictureBoxCapturedImage.Image = b;
-            
-            SaveImage(b, "captured");
+            currentImage.RotateFlip(RotateFlipType.RotateNoneFlipY);
+            pictureBoxCapturedImage.Image = currentImage;
+
 
             Cursor.Current = Cursors.Default;
         }
 
         private void SaveImage(Bitmap bitmapImage, string filePath)
         {
-            if(bitmapImage != null && !string.IsNullOrWhiteSpace(filePath))
+            if (bitmapImage != null && !string.IsNullOrWhiteSpace(filePath))
             {
-                bitmapImage.Save(filePath +".jpg");
+                bitmapImage.Save(filePath);
             }
         }
 
@@ -376,6 +460,12 @@ namespace FingerPrintApplication
                 Marshal.FreeCoTaskMem(m_ip);
                 m_ip = IntPtr.Zero;
             }
+        }
+
+        private void buttonFingrprintaction_Click(object sender, EventArgs e)
+        {
+            EnrollmentForm ex = new EnrollmentForm();
+            ex.ShowDialog();
         }
     }
 }
