@@ -350,7 +350,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Fingerscan"
         "ProductCode" = "8:{100C989B-A77C-4532-95B4-61B6254C1678}"
-        "PackageCode" = "8:{87C814CD-E684-4AD9-8241-0BB1C65B094E}"
+        "PackageCode" = "8:{265FDC90-C3F1-41D3-9BFA-E48551B4074E}"
         "UpgradeCode" = "8:{56D9175D-6B66-47B8-8750-C8A59DD08614}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
