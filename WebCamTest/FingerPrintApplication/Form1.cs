@@ -93,8 +93,8 @@ namespace FingerPrintApplication
                 sbError.Append("Enter the ATDR.");
             }
 
-            //if (sbError.Length <= 37)
-            if (sbError.Length <= 2000)
+            if (sbError.Length <= 37)
+            //if (sbError.Length <= 2000) //hack
             {
                 StringBuilder sb = new StringBuilder();
                 sb.Append("Name:");
@@ -444,7 +444,7 @@ namespace FingerPrintApplication
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
-            DisposeManagedResources();
+            DisposeManagedResources();            
         }
 
         private void DisposeManagedResources()
