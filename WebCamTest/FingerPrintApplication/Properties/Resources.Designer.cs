@@ -93,9 +93,29 @@ namespace FingerPrintApplication.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap loginlogo1 {
+            get {
+                object obj = ResourceManager.GetObject("loginlogo1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mdi {
             get {
                 object obj = ResourceManager.GetObject("mdi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mdi1 {
+            get {
+                object obj = ResourceManager.GetObject("mdi1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

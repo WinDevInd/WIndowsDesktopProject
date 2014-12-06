@@ -75,7 +75,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.BackgroundImage = global::FingerPrintApplication.Properties.Resources.mdi;
+            this.BackgroundImage = global::FingerPrintApplication.Properties.Resources.mdi1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(909, 546);
             this.Controls.Add(this.menuStrip1);

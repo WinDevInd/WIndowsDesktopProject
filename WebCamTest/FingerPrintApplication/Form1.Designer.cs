@@ -123,8 +123,8 @@
             this.label49 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label51 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBoxCapturedImage = new System.Windows.Forms.PictureBox();
             this.picboxImage = new System.Windows.Forms.PictureBox();
@@ -146,7 +146,7 @@
             // 
             // txtName
             // 
-            this.txtName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(255)))), ((int)(((byte)(87)))));
+            this.txtName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtName.Location = new System.Drawing.Point(94, 122);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(204, 20);
@@ -174,7 +174,7 @@
             // 
             // txtCompanySchoolName
             // 
-            this.txtCompanySchoolName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(255)))), ((int)(((byte)(87)))));
+            this.txtCompanySchoolName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtCompanySchoolName.Location = new System.Drawing.Point(94, 203);
             this.txtCompanySchoolName.Name = "txtCompanySchoolName";
             this.txtCompanySchoolName.Size = new System.Drawing.Size(204, 20);
@@ -191,7 +191,7 @@
             // 
             // txtDesignation
             // 
-            this.txtDesignation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(255)))), ((int)(((byte)(87)))));
+            this.txtDesignation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtDesignation.Location = new System.Drawing.Point(94, 233);
             this.txtDesignation.Name = "txtDesignation";
             this.txtDesignation.Size = new System.Drawing.Size(204, 20);
@@ -225,7 +225,7 @@
             // 
             // txtTelephone
             // 
-            this.txtTelephone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(255)))), ((int)(((byte)(87)))));
+            this.txtTelephone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtTelephone.Location = new System.Drawing.Point(94, 264);
             this.txtTelephone.Name = "txtTelephone";
             this.txtTelephone.Size = new System.Drawing.Size(204, 20);
@@ -242,7 +242,7 @@
             // 
             // txtMobile
             // 
-            this.txtMobile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(255)))), ((int)(((byte)(87)))));
+            this.txtMobile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtMobile.Location = new System.Drawing.Point(94, 294);
             this.txtMobile.MaxLength = 10;
             this.txtMobile.Name = "txtMobile";
@@ -260,7 +260,7 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(255)))), ((int)(((byte)(87)))));
+            this.txtEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtEmail.Location = new System.Drawing.Point(94, 324);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(204, 20);
@@ -277,18 +277,19 @@
             // 
             // label9
             // 
-            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(10, 357);
             this.label9.Name = "label9";
+            this.label9.Padding = new System.Windows.Forms.Padding(115, 0, 0, 0);
             this.label9.Size = new System.Drawing.Size(288, 24);
             this.label9.TabIndex = 18;
             this.label9.Text = "Address";
             // 
             // txtHouseNo
             // 
-            this.txtHouseNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(255)))), ((int)(((byte)(87)))));
+            this.txtHouseNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtHouseNo.Location = new System.Drawing.Point(94, 385);
             this.txtHouseNo.Name = "txtHouseNo";
             this.txtHouseNo.Size = new System.Drawing.Size(204, 20);
@@ -305,7 +306,7 @@
             // 
             // txtBuildingName
             // 
-            this.txtBuildingName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(255)))), ((int)(((byte)(87)))));
+            this.txtBuildingName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtBuildingName.Location = new System.Drawing.Point(94, 420);
             this.txtBuildingName.Name = "txtBuildingName";
             this.txtBuildingName.Size = new System.Drawing.Size(204, 20);
@@ -322,7 +323,7 @@
             // 
             // txtStreetName
             // 
-            this.txtStreetName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(255)))), ((int)(((byte)(87)))));
+            this.txtStreetName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtStreetName.Location = new System.Drawing.Point(94, 453);
             this.txtStreetName.Name = "txtStreetName";
             this.txtStreetName.Size = new System.Drawing.Size(204, 20);
@@ -339,7 +340,7 @@
             // 
             // txtState
             // 
-            this.txtState.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(255)))), ((int)(((byte)(87)))));
+            this.txtState.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtState.Location = new System.Drawing.Point(94, 484);
             this.txtState.Name = "txtState";
             this.txtState.Size = new System.Drawing.Size(204, 20);
@@ -356,7 +357,7 @@
             // 
             // txtCity
             // 
-            this.txtCity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(255)))), ((int)(((byte)(87)))));
+            this.txtCity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtCity.Location = new System.Drawing.Point(94, 518);
             this.txtCity.Name = "txtCity";
             this.txtCity.Size = new System.Drawing.Size(204, 20);
@@ -373,7 +374,7 @@
             // 
             // txtPostalCode
             // 
-            this.txtPostalCode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(255)))), ((int)(((byte)(87)))));
+            this.txtPostalCode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtPostalCode.Location = new System.Drawing.Point(94, 548);
             this.txtPostalCode.MaxLength = 6;
             this.txtPostalCode.Name = "txtPostalCode";
@@ -391,7 +392,7 @@
             // 
             // txtAtdL
             // 
-            this.txtAtdL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(255)))), ((int)(((byte)(87)))));
+            this.txtAtdL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtAtdL.Location = new System.Drawing.Point(128, 579);
             this.txtAtdL.Name = "txtAtdL";
             this.txtAtdL.Size = new System.Drawing.Size(53, 20);
@@ -417,7 +418,7 @@
             // 
             // txtAtdR
             // 
-            this.txtAtdR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(255)))), ((int)(((byte)(87)))));
+            this.txtAtdR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtAtdR.Location = new System.Drawing.Point(236, 577);
             this.txtAtdR.Name = "txtAtdR";
             this.txtAtdR.Size = new System.Drawing.Size(61, 20);
@@ -434,7 +435,7 @@
             // 
             // txtFranchiseCode
             // 
-            this.txtFranchiseCode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(255)))), ((int)(((byte)(87)))));
+            this.txtFranchiseCode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtFranchiseCode.Location = new System.Drawing.Point(95, 608);
             this.txtFranchiseCode.Name = "txtFranchiseCode";
             this.txtFranchiseCode.Size = new System.Drawing.Size(204, 20);
@@ -451,7 +452,7 @@
             // 
             // label20
             // 
-            this.label20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(255)))), ((int)(((byte)(87)))));
+            this.label20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.Black;
             this.label20.Location = new System.Drawing.Point(340, 386);
@@ -501,7 +502,7 @@
             // 
             // txtNameSibling1
             // 
-            this.txtNameSibling1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(255)))), ((int)(((byte)(87)))));
+            this.txtNameSibling1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtNameSibling1.Location = new System.Drawing.Point(424, 425);
             this.txtNameSibling1.Name = "txtNameSibling1";
             this.txtNameSibling1.Size = new System.Drawing.Size(204, 20);
@@ -519,7 +520,7 @@
             // 
             // txtClassSibling1
             // 
-            this.txtClassSibling1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(255)))), ((int)(((byte)(87)))));
+            this.txtClassSibling1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtClassSibling1.Location = new System.Drawing.Point(424, 547);
             this.txtClassSibling1.Name = "txtClassSibling1";
             this.txtClassSibling1.Size = new System.Drawing.Size(204, 20);
@@ -536,7 +537,7 @@
             // 
             // txtSchoolSibling1
             // 
-            this.txtSchoolSibling1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(255)))), ((int)(((byte)(87)))));
+            this.txtSchoolSibling1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtSchoolSibling1.Location = new System.Drawing.Point(424, 512);
             this.txtSchoolSibling1.Name = "txtSchoolSibling1";
             this.txtSchoolSibling1.Size = new System.Drawing.Size(204, 20);
@@ -553,7 +554,7 @@
             // 
             // txtEmailId
             // 
-            this.txtEmailId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(255)))), ((int)(((byte)(87)))));
+            this.txtEmailId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtEmailId.Location = new System.Drawing.Point(757, 235);
             this.txtEmailId.Name = "txtEmailId";
             this.txtEmailId.Size = new System.Drawing.Size(204, 20);
@@ -570,7 +571,7 @@
             // 
             // txtMobileNo
             // 
-            this.txtMobileNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(255)))), ((int)(((byte)(87)))));
+            this.txtMobileNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtMobileNo.Location = new System.Drawing.Point(757, 207);
             this.txtMobileNo.MaxLength = 10;
             this.txtMobileNo.Name = "txtMobileNo";
@@ -616,7 +617,7 @@
             // 
             // txtFatherName
             // 
-            this.txtFatherName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(255)))), ((int)(((byte)(87)))));
+            this.txtFatherName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtFatherName.Location = new System.Drawing.Point(757, 117);
             this.txtFatherName.Name = "txtFatherName";
             this.txtFatherName.Size = new System.Drawing.Size(204, 20);
@@ -633,7 +634,7 @@
             // 
             // txtOccupation
             // 
-            this.txtOccupation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(255)))), ((int)(((byte)(87)))));
+            this.txtOccupation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtOccupation.Location = new System.Drawing.Point(757, 176);
             this.txtOccupation.Name = "txtOccupation";
             this.txtOccupation.Size = new System.Drawing.Size(204, 20);
@@ -641,7 +642,7 @@
             // 
             // txtMotherEmailId
             // 
-            this.txtMotherEmailId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(255)))), ((int)(((byte)(87)))));
+            this.txtMotherEmailId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtMotherEmailId.Location = new System.Drawing.Point(757, 355);
             this.txtMotherEmailId.Name = "txtMotherEmailId";
             this.txtMotherEmailId.Size = new System.Drawing.Size(204, 20);
@@ -658,7 +659,7 @@
             // 
             // txtMotherContactNo
             // 
-            this.txtMotherContactNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(255)))), ((int)(((byte)(87)))));
+            this.txtMotherContactNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtMotherContactNo.Location = new System.Drawing.Point(757, 324);
             this.txtMotherContactNo.MaxLength = 50;
             this.txtMotherContactNo.Name = "txtMotherContactNo";
@@ -686,7 +687,7 @@
             // 
             // txtMotherName
             // 
-            this.txtMotherName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(255)))), ((int)(((byte)(87)))));
+            this.txtMotherName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtMotherName.Location = new System.Drawing.Point(757, 264);
             this.txtMotherName.Name = "txtMotherName";
             this.txtMotherName.Size = new System.Drawing.Size(204, 20);
@@ -703,7 +704,7 @@
             // 
             // txtMotherOccupation
             // 
-            this.txtMotherOccupation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(255)))), ((int)(((byte)(87)))));
+            this.txtMotherOccupation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtMotherOccupation.Location = new System.Drawing.Point(757, 294);
             this.txtMotherOccupation.Name = "txtMotherOccupation";
             this.txtMotherOccupation.Size = new System.Drawing.Size(204, 20);
@@ -711,7 +712,7 @@
             // 
             // txtClassSibling2
             // 
-            this.txtClassSibling2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(255)))), ((int)(((byte)(87)))));
+            this.txtClassSibling2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtClassSibling2.Location = new System.Drawing.Point(757, 541);
             this.txtClassSibling2.Name = "txtClassSibling2";
             this.txtClassSibling2.Size = new System.Drawing.Size(204, 20);
@@ -728,7 +729,7 @@
             // 
             // txtSchoolSibling2
             // 
-            this.txtSchoolSibling2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(255)))), ((int)(((byte)(87)))));
+            this.txtSchoolSibling2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtSchoolSibling2.Location = new System.Drawing.Point(757, 506);
             this.txtSchoolSibling2.Name = "txtSchoolSibling2";
             this.txtSchoolSibling2.Size = new System.Drawing.Size(204, 20);
@@ -784,7 +785,7 @@
             // 
             // txtNameSibling2
             // 
-            this.txtNameSibling2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(255)))), ((int)(((byte)(87)))));
+            this.txtNameSibling2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtNameSibling2.Location = new System.Drawing.Point(757, 419);
             this.txtNameSibling2.Name = "txtNameSibling2";
             this.txtNameSibling2.Size = new System.Drawing.Size(204, 20);
@@ -801,7 +802,7 @@
             // 
             // label40
             // 
-            this.label40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(255)))), ((int)(((byte)(87)))));
+            this.label40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label40.ForeColor = System.Drawing.Color.Black;
             this.label40.Location = new System.Drawing.Point(654, 386);
@@ -870,7 +871,7 @@
             // 
             this.label41.AutoSize = true;
             this.label41.BackColor = System.Drawing.Color.Transparent;
-            this.label41.ForeColor = System.Drawing.Color.White;
+            this.label41.ForeColor = System.Drawing.Color.Red;
             this.label41.Location = new System.Drawing.Point(40, 128);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(11, 13);
@@ -881,7 +882,7 @@
             // 
             this.label42.AutoSize = true;
             this.label42.BackColor = System.Drawing.Color.Transparent;
-            this.label42.ForeColor = System.Drawing.Color.White;
+            this.label42.ForeColor = System.Drawing.Color.Red;
             this.label42.Location = new System.Drawing.Point(40, 152);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(11, 13);
@@ -892,7 +893,7 @@
             // 
             this.label43.AutoSize = true;
             this.label43.BackColor = System.Drawing.Color.Transparent;
-            this.label43.ForeColor = System.Drawing.Color.White;
+            this.label43.ForeColor = System.Drawing.Color.Red;
             this.label43.Location = new System.Drawing.Point(111, 582);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(11, 13);
@@ -903,7 +904,7 @@
             // 
             this.label44.AutoSize = true;
             this.label44.BackColor = System.Drawing.Color.Transparent;
-            this.label44.ForeColor = System.Drawing.Color.White;
+            this.label44.ForeColor = System.Drawing.Color.Red;
             this.label44.Location = new System.Drawing.Point(219, 582);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(11, 13);
@@ -914,7 +915,7 @@
             // 
             this.label45.AutoSize = true;
             this.label45.BackColor = System.Drawing.Color.Transparent;
-            this.label45.ForeColor = System.Drawing.Color.White;
+            this.label45.ForeColor = System.Drawing.Color.Red;
             this.label45.Location = new System.Drawing.Point(741, 121);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(11, 13);
@@ -958,7 +959,7 @@
             // 
             this.label50.AutoSize = true;
             this.label50.BackColor = System.Drawing.Color.Transparent;
-            this.label50.ForeColor = System.Drawing.Color.White;
+            this.label50.ForeColor = System.Drawing.Color.Red;
             this.label50.Location = new System.Drawing.Point(45, 295);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(11, 13);
@@ -975,17 +976,6 @@
             this.panel1.Size = new System.Drawing.Size(994, 107);
             this.panel1.TabIndex = 98;
             // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.BackColor = System.Drawing.Color.Transparent;
-            this.label51.Font = new System.Drawing.Font("Calibri", 46F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.Location = new System.Drawing.Point(64, 5);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(165, 76);
-            this.label51.TabIndex = 1;
-            this.label51.Text = "Brain";
-            // 
             // label52
             // 
             this.label52.AutoSize = true;
@@ -996,6 +986,17 @@
             this.label52.Size = new System.Drawing.Size(193, 76);
             this.label52.TabIndex = 2;
             this.label52.Text = "Power";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.BackColor = System.Drawing.Color.Transparent;
+            this.label51.Font = new System.Drawing.Font("Calibri", 46F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.Location = new System.Drawing.Point(64, 5);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(165, 76);
+            this.label51.TabIndex = 1;
+            this.label51.Text = "Brain";
             // 
             // pictureBox1
             // 
@@ -1010,7 +1011,7 @@
             // pictureBoxCapturedImage
             // 
             this.pictureBoxCapturedImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBoxCapturedImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxCapturedImage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBoxCapturedImage.Location = new System.Drawing.Point(480, 140);
             this.pictureBoxCapturedImage.Name = "pictureBoxCapturedImage";
             this.pictureBoxCapturedImage.Size = new System.Drawing.Size(148, 153);
@@ -1021,7 +1022,7 @@
             // picboxImage
             // 
             this.picboxImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.picboxImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picboxImage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.picboxImage.Location = new System.Drawing.Point(325, 140);
             this.picboxImage.Name = "picboxImage";
             this.picboxImage.Size = new System.Drawing.Size(148, 153);
@@ -1034,7 +1035,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
+            this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(996, 694);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label50);

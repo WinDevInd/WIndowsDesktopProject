@@ -178,6 +178,7 @@
     <Content Include="Assets\img3.jpg" />
     <Content Include="Assets\loginlogo.jpg" />
     <Content Include="Assets\mdi.jpg" />
+    <Content Include="Assets\mdi1.png" />
     <Content Include="Assets\Save_1.jpg" />
     <None Include="LOGO\loginlogo.jpg" />
     <Content Include="favicon.ico" />

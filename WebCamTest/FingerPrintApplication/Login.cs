@@ -18,9 +18,32 @@ namespace FingerPrintApplication
         }
         private String configFile = Util.GetConfigFilepath();
 
-        private void button1_Click(object sender, EventArgs e)
+
+        private void Login_Load(object sender, EventArgs e)
         {
-            DateTime dt = new DateTime(2014, 12, 5);
+            if (!Util.CreateDefaultDataSet())
+            {
+                DialogResult res = MessageBox.Show("Config file is corrupted or missing ! install application again", "Config error", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                if (res == DialogResult.OK)
+                {
+                    Application.Exit();
+                    return;
+                }
+            }
+
+            this.fSDataSet.ReadXml(configFile);
+
+            if (Util.VarifyConfig(fSDataSet))
+            {
+                MessageBox.Show("Config file is corrupted or missing ! Reseting User Database file", "Config error", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                Util.CreateDefaultDataSet();
+            }
+
+        }
+
+        private void buttonLogin_Click(object sender, EventArgs e)
+        {
+            DateTime dt = new DateTime(2014, 12, 8);
 
             string userName = txtUserName.Text;
             string pass = txtPassword.Text;
@@ -43,21 +66,9 @@ namespace FingerPrintApplication
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            txtUserName.Text = string.Empty;
-            txtPassword.Text = string.Empty;
-        }
-
         //check config file
         private bool varifyUser(string userName, string Password)
         {
-            if (!System.IO.File.Exists(configFile))
-            {
-                MessageBox.Show("Configuration does not exist", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
-            }
-
             foreach (DataRow item in fSDataSet.Tables["User"].Rows)
             {
                 string user = item.ItemArray[5].ToString();
@@ -72,16 +83,9 @@ namespace FingerPrintApplication
             return false;
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void buttonExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void Login_Load(object sender, EventArgs e)
-        {
-            Util.CreadeDefaultDataSet();
-            this.fSDataSet.ReadXml(configFile);
-
         }
     }
 }
