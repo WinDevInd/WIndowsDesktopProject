@@ -33,6 +33,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_6AF6C21332B041659C8E856522C6804D"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_6C3471A847B1C003AA7657B8C4C739A2"
         "OwnerKey" = "8:_18568E7098D6494DACA774A3F97940D7"
         "MsmSig" = "8:_UNDEFINED"
@@ -64,6 +70,12 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_7ACB429D0D731DDF752E609C95141DEE"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_18568E7098D6494DACA774A3F97940D7"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -83,12 +95,6 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_6C3471A847B1C003AA7657B8C4C739A2"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_7ACB429D0D731DDF752E609C95141DEE"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -116,6 +122,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.5"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.5 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.5"
+                    }
+                }
             }
         }
         "Release"
@@ -234,6 +248,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6AF6C21332B041659C8E856522C6804D"
+            {
+            "SourcePath" = "8:..\\FingerPrintApplication\\Icon.ico"
+            "TargetName" = "8:Icon.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_C9A0EE40EA3941FC873402C7717E87DA"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_6C3471A847B1C003AA7657B8C4C739A2"
             {
             "AssemblyRegister" = "3:1"
@@ -336,7 +370,7 @@
             "{1525181F-901A-416C-8A58-119130FE478E}:_289B10563F20411DABB066972A36B476"
             {
             "Name" = "8:#1916"
-            "AlwaysCreate" = "11:FALSE"
+            "AlwaysCreate" = "11:TRUE"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Property" = "8:DesktopFolder"
@@ -384,7 +418,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Fingerscan"
         "ProductCode" = "8:{100C989B-A77C-4532-95B4-61B6254C1678}"
-        "PackageCode" = "8:{EF002B24-DBDB-4808-8464-62204FFA0DFF}"
+        "PackageCode" = "8:{DB96D2A2-EDA4-4F95-9274-5DED969FC902}"
         "UpgradeCode" = "8:{56D9175D-6B66-47B8-8750-C8A59DD08614}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -504,6 +538,20 @@
         }
         "Shortcut"
         {
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_3ABF84195AC84710985E586308A5950D"
+            {
+            "Name" = "8:Fingerscan"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:TRUE"
+            "Target" = "8:_18568E7098D6494DACA774A3F97940D7"
+            "Folder" = "8:_289B10563F20411DABB066972A36B476"
+            "WorkingFolder" = "8:_C9A0EE40EA3941FC873402C7717E87DA"
+            "Icon" = "8:_6AF6C21332B041659C8E856522C6804D"
+            "Feature" = "8:"
+            }
         }
         "UserInterface"
         {

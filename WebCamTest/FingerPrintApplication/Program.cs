@@ -16,7 +16,7 @@ namespace FingerPrintApplication
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            SetupHelper.Init();
         }
     }
 }

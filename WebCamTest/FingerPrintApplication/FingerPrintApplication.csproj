@@ -107,6 +107,7 @@
     <Compile Include="ParentForm.Designer.cs">
       <DependentUpon>ParentForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SetupHelper.cs" />
     <Compile Include="Util.cs" />
     <Compile Include="WebCamHelper.cs" />
     <Compile Include="Form1.cs">

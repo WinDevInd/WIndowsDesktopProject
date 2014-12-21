@@ -43,17 +43,10 @@ namespace FingerPrintApplication
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            DateTime dt = new DateTime(2014, 12, 8);
-
             string userName = txtUserName.Text;
             string pass = txtPassword.Text;
 
-            if (DateTime.Now >= dt)
-            {
-                MessageBox.Show("Evolution period Expired...! Please contact vendor", "Tral Expired", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }
-
-            else if (varifyUser(userName, pass))
+            if (varifyUser(userName, pass))
             {
                 ParentForm frm1 = new ParentForm();
                 frm1.Show();
