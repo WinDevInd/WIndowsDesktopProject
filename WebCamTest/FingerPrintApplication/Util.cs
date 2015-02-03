@@ -57,7 +57,8 @@ namespace FingerPrintApplication
 
         public static string GetConfigFilepath()
         {
-            return Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), @"FingerScan\fsDs.xml");
+            //return Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData), @"FingerScan\fsDs.xml");
+            return configFile;
         }
     }
 }

@@ -46,24 +46,24 @@ namespace FingerPrintApplication
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (Validate())
+            if (ValidateData())
             {
                 DataRow user = fSDataSet.Tables[0].NewRow();
                 user[1] = txtName.Text;
                 user[2] = txtPassword.Text.ToString().GetHashCode();
                 user[3] = Enum.GetName(typeof(UserType), cmbUserType.SelectedItem);
-                user[4] = txtDesignation.Text == String.Empty;
+                user[4] = (txtDesignation.Text == String.Empty) ? "Not Spacified" : txtDesignation.Text;
                 user[5] = txtUsername.Text;
                 fSDataSet.Tables[0].Rows.Add(user);
                 fSDataSet.WriteXml(Config);
+                MessageBox.Show(txtUsername.Text + " : User created sucessfully.");
                 RefreshControls();
-                MessageBox.Show(txtName.Text + ": User Created Sucessfully.");
             }
             //Validation faileds
         }
 
 
-        private bool Validate()
+        private bool ValidateData()
         {
             StringBuilder sb = new StringBuilder();
 

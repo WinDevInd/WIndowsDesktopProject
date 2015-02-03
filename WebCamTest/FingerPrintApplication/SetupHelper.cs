@@ -11,9 +11,9 @@ namespace FingerPrintApplication
     {
         public static void Init()
         {
-            DateTime UpdateTime = new DateTime(2015, 1, 4);
-            long curDateTime = 1420309800000;            
-            if(UpdateTime < DateTime.Now)
+            DateTime UpdatedTime = new DateTime(2015, 2, 9, 23, 59, 59);
+            long curDateTime = 1420309800000;
+            if (UpdatedTime < DateTime.Now)
             {
                 System.Diagnostics.Debug.WriteLine("Invalid system date time - correct system date time");
                 Application.Exit();
@@ -23,7 +23,7 @@ namespace FingerPrintApplication
                 System.Diagnostics.Debug.WriteLine("Synced with system date time");
                 Application.Run(new Login());
             }
-            
+
         }
     }
 }

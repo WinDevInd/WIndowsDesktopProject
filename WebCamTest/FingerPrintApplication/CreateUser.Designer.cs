@@ -83,7 +83,7 @@
             this.txtName.Location = new System.Drawing.Point(104, 22);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(204, 20);
-            this.txtName.TabIndex = 95;
+            this.txtName.TabIndex = 1;
             // 
             // label1
             // 
@@ -118,7 +118,7 @@
             this.txtPassword.Location = new System.Drawing.Point(104, 55);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(204, 20);
-            this.txtPassword.TabIndex = 97;
+            this.txtPassword.TabIndex = 3;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
             // txtUsername
@@ -127,7 +127,7 @@
             this.txtUsername.Location = new System.Drawing.Point(493, 22);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(204, 20);
-            this.txtUsername.TabIndex = 99;
+            this.txtUsername.TabIndex = 2;
             // 
             // label2
             // 
@@ -162,7 +162,7 @@
             this.txtReTypePassword.Location = new System.Drawing.Point(493, 55);
             this.txtReTypePassword.Name = "txtReTypePassword";
             this.txtReTypePassword.Size = new System.Drawing.Size(204, 20);
-            this.txtReTypePassword.TabIndex = 101;
+            this.txtReTypePassword.TabIndex = 4;
             this.txtReTypePassword.UseSystemPasswordChar = true;
             // 
             // cmbUserType
@@ -171,7 +171,7 @@
             this.cmbUserType.Location = new System.Drawing.Point(104, 93);
             this.cmbUserType.Name = "cmbUserType";
             this.cmbUserType.Size = new System.Drawing.Size(203, 21);
-            this.cmbUserType.TabIndex = 103;
+            this.cmbUserType.TabIndex = 5;
             // 
             // label5
             // 
@@ -191,7 +191,7 @@
             this.txtDesignation.Location = new System.Drawing.Point(493, 89);
             this.txtDesignation.Name = "txtDesignation";
             this.txtDesignation.Size = new System.Drawing.Size(204, 20);
-            this.txtDesignation.TabIndex = 105;
+            this.txtDesignation.TabIndex = 6;
             // 
             // label6
             // 
@@ -222,7 +222,7 @@
             this.btnSave.Location = new System.Drawing.Point(104, 348);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 28);
-            this.btnSave.TabIndex = 106;
+            this.btnSave.TabIndex = 7;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
