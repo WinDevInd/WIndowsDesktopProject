@@ -3,7 +3,7 @@
 "VSVersion" = "3:800"
 "ProjectType" = "8:{978C614F-708E-4E1A-B201-565925725DBA}"
 "IsWebType" = "8:FALSE"
-"ProjectName" = "8:FingerScan"
+"ProjectName" = "8:DMITSetupPackage"
 "LanguageId" = "3:1033"
 "CodePage" = "3:1252"
 "UILanguageId" = "3:1033"
@@ -70,12 +70,6 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_7ACB429D0D731DDF752E609C95141DEE"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_18568E7098D6494DACA774A3F97940D7"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -95,6 +89,12 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_6C3471A847B1C003AA7657B8C4C739A2"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_7ACB429D0D731DDF752E609C95141DEE"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -431,7 +431,7 @@
         "ARPHELPLINK" = "8:"
         "Title" = "8:Fingerscan"
         "Subject" = "8:"
-        "ARPCONTACT" = "8:HJSoft"
+        "ARPCONTACT" = "8:TJ Innovation"
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:"
         "ARPURLINFOABOUT" = "8:"
@@ -953,7 +953,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_18568E7098D6494DACA774A3F97940D7"
             {
-            "SourcePath" = "8:..\\FingerPrintApplication\\obj\\Debug\\Fingerscan.exe"
+            "SourcePath" = "8:..\\FingerPrintApplication\\obj\\Release\\Fingerscan.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_C9A0EE40EA3941FC873402C7717E87DA"

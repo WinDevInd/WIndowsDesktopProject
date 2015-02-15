@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FingerPrintApplication", "FingerPrintApplication\FingerPrintApplication.csproj", "{42F14F4F-88D1-420E-AD6A-25572E82AEB4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DMITApplication", "FingerPrintApplication\DMITApplication.csproj", "{42F14F4F-88D1-420E-AD6A-25572E82AEB4}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "FingerScan", "FingerScanSetup\FingerScanSetup.vdproj", "{D61425F6-74E7-4757-ADA4-BE0CCE80611B}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "DMITSetupPackage", "FingerScanSetup\FingerScanSetup.vdproj", "{D61425F6-74E7-4757-ADA4-BE0CCE80611B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
