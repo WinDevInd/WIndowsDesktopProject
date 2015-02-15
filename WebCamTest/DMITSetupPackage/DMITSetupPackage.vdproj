@@ -21,20 +21,8 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_392B53E126AD44AAA9972421D2E2972B"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_3ED34BF6BEFC0490097DDDBC0E624509"
         "OwnerKey" = "8:_18568E7098D6494DACA774A3F97940D7"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_6AF6C21332B041659C8E856522C6804D"
-        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -63,8 +51,20 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_84646191EA9A4DDBB09FB59124FADB45"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_87418478012E6676A0F7C34C817A59E2"
         "OwnerKey" = "8:_18568E7098D6494DACA774A3F97940D7"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_E784F3A96B714B3A9C261283058C5110"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -197,26 +197,6 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_392B53E126AD44AAA9972421D2E2972B"
-            {
-            "SourcePath" = "8:..\\FingerPrintApplication\\bin\\Release\\fsDs.config"
-            "TargetName" = "8:fsDs.config"
-            "Tag" = "8:"
-            "Folder" = "8:_C9A0EE40EA3941FC873402C7717E87DA"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_3ED34BF6BEFC0490097DDDBC0E624509"
             {
             "AssemblyRegister" = "3:1"
@@ -246,26 +226,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6AF6C21332B041659C8E856522C6804D"
-            {
-            "SourcePath" = "8:..\\FingerPrintApplication\\Icon.ico"
-            "TargetName" = "8:Icon.ico"
-            "Tag" = "8:"
-            "Folder" = "8:_C9A0EE40EA3941FC873402C7717E87DA"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_6C3471A847B1C003AA7657B8C4C739A2"
@@ -330,6 +290,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_84646191EA9A4DDBB09FB59124FADB45"
+            {
+            "SourcePath" = "8:..\\DMITApplication\\SetupAssets\\Icon.ico"
+            "TargetName" = "8:Icon.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_C9A0EE40EA3941FC873402C7717E87DA"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_87418478012E6676A0F7C34C817A59E2"
             {
             "AssemblyRegister" = "3:1"
@@ -359,6 +339,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E784F3A96B714B3A9C261283058C5110"
+            {
+            "SourcePath" = "8:..\\DMITApplication\\SetupAssets\\fsDs.config"
+            "TargetName" = "8:fsDs.config"
+            "Tag" = "8:"
+            "Folder" = "8:_C9A0EE40EA3941FC873402C7717E87DA"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
         }
@@ -416,7 +416,7 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:Fingerscan"
+        "ProductName" = "8:DMIT Identification"
         "ProductCode" = "8:{100C989B-A77C-4532-95B4-61B6254C1678}"
         "PackageCode" = "8:{DB96D2A2-EDA4-4F95-9274-5DED969FC902}"
         "UpgradeCode" = "8:{56D9175D-6B66-47B8-8750-C8A59DD08614}"
@@ -426,10 +426,10 @@
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
         "ProductVersion" = "8:1.0.0"
-        "Manufacturer" = "8:HJSoft"
+        "Manufacturer" = "8:TJ Innovation"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:Fingerscan"
+        "Title" = "8:DMIT Identification"
         "Subject" = "8:"
         "ARPCONTACT" = "8:TJ Innovation"
         "Keywords" = "8:"
@@ -538,18 +538,18 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_3ABF84195AC84710985E586308A5950D"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_6335DF88297A492AAE644C0CD1497C87"
             {
-            "Name" = "8:Fingerscan"
+            "Name" = "8:DMIT Identification"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
-            "Transitive" = "11:TRUE"
+            "Transitive" = "11:FALSE"
             "Target" = "8:_18568E7098D6494DACA774A3F97940D7"
             "Folder" = "8:_289B10563F20411DABB066972A36B476"
             "WorkingFolder" = "8:_C9A0EE40EA3941FC873402C7717E87DA"
-            "Icon" = "8:_6AF6C21332B041659C8E856522C6804D"
+            "Icon" = "8:_84646191EA9A4DDBB09FB59124FADB45"
             "Feature" = "8:"
             }
         }
@@ -953,7 +953,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_18568E7098D6494DACA774A3F97940D7"
             {
-            "SourcePath" = "8:..\\FingerPrintApplication\\obj\\Release\\Fingerscan.exe"
+            "SourcePath" = "8:..\\DMITApplication\\obj\\Release\\Fingerscan.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_C9A0EE40EA3941FC873402C7717E87DA"

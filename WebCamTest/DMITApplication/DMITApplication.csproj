@@ -146,6 +146,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="SetupAssets\fsDs.config" />
     <None Include="FSDataSet.xsc">
       <DependentUpon>FSDataSet.xsd</DependentUpon>
     </None>
@@ -182,6 +183,7 @@
     <Content Include="Assets\mdi1.png" />
     <Content Include="Assets\Save_1.jpg" />
     <None Include="LOGO\loginlogo.jpg" />
+    <Content Include="SetupAssets\Icon.ico" />
     <Content Include="favicon.ico" />
     <Content Include="Readme.txt" />
   </ItemGroup>
